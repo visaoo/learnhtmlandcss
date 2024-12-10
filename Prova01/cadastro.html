@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      src="https://www.ifms.edu.br/marcaifms.png"
+      alt="Página Inicial"
+      title="Página Inicial"
+    />
+
+    <form action="formulario.php" method="POST">
+      <fieldset>
+        <section>
+          <label for="nome">Nome:</label>
+          <input placeholder="Digite seu nome" type="text" id="nome" name="nome" required />
+        </section>
+        <section>
+          <label for="email">Email:</label>
+          <input placeholder="Digite seu email" type="email" id="email" name="email" required />
+        </section>
+        <section>
+          <label for="telefone">Telefone:</label>
+          <input placeholder="Digite seu telefone" type="tel" id="telefone" name="telefone" required />
+        </section>
+  
+        <section>
+          <input
+            type="radio"
+            name="escolaridade"
+            id="medio"
+            value="medio"
+            required
+          />
+          <label for="medio">Ensino Médio</label>
+          <input
+            type="radio"
+            name="escolaridade"
+            id="superior"
+            value="superior"
+          />
+          <label for="superior">Ensino Superior</label>
+        </section>
+  
+        <section>
+          <label for="nome_user">Nome de usuário:</label>
+          <input placeholder="Digite seu usuário" type="text" id="nome_user" name="nome_user" required />
+        </section>
+  
+        <section>
+          <label for="senha">Senha:</label>
+          <input placeholder="Digite sua senha" type="password" id="senha" name="senha" required minlength="6" />
+        </section>
+  
+        <section>
+          <label for="observacoes">Observações:</label>
+          <textarea
+            id="observacoes"
+            name="observacoes"
+            rows="8"
+            cols="20"
+          >Escreva seu texto</textarea>
+        </section>
+  
+        <section>
+          <button type="reset">Limpar</button>
+          <button type="submit">Salvar</button>
+        </section>
+      </fieldset>
+    </form>
+    <center><li><a href="index.html">Página Principal</a></li></center>
+  </body>
+</html>
